@@ -1,0 +1,1153 @@
+/* css */
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 70px;
+    
+}
+.aboutusbody{
+  padding-top: 0;
+
+}
+.contactusbody{
+  padding-top: 0;
+
+}
+
+
+.homebg {
+
+    display: flex;
+    justify-content: center;
+    background-size: contain;
+
+    padding: 20px;
+    
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh; /* Allows the section to grow as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensures content centers */
+    
+    
+}
+
+.order-button {
+    
+    color: black;                /* Text color */
+    border: none;
+    border-radius: 8px;
+    padding: 5px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+    font-weight: 500;
+}
+
+.order-button:hover {
+    background-color: #ffae42;; /* Yellow color on hover */
+    color: #333;               /* Optional: darker text color for contrast */
+    transform: scale(1.05);    /* Slightly enlarges button on hover */
+}
+
+
+
+
+
+
+/* NAVIGATION MENU START */
+
+/* General styling for the navbar */
+/* Navbar styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #090808;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  top: 0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+/* Button hover effect */
+.navbar button:hover {
+  background-color: #ffae42;
+  color: black;
+}
+
+/* Left section (logo and brand name) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Logo styling */
+.logo, .logo2 {
+  height: 40px;
+  margin-top: 5px;
+}
+
+/* Ensure equal margins between logos and brand name */
+.logo {
+  margin-right: 10px; /* Adjust margin for the first logo */
+}
+
+.logo2 {
+  margin-left: 35px; /* Adjust margin for the second logo */
+  margin-bottom: 14px;
+
+}
+
+/* Brand name styling */
+.brand-name {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  margin-left: 10px; /* Space to the left of the brand name */
+}
+
+/* Button styling */
+.navbar-buttons {
+  display: flex;
+  gap: 10px; /* Adjust gap between buttons */
+  margin-left: 20px; /* Space between buttons and search bar */
+}
+
+.navbar-buttons button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Dropdown styling */
+.navbar-buttons .dropdown {
+  position: relative;
+}
+
+.navbar-buttons .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #555;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-buttons .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar-buttons .dropdown-content a {
+  color: #fff;
+  padding: 8px 12px;
+  display: block;
+  text-decoration: none;
+}
+
+/* Search bar styling */
+.navbar-search {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end; /* Align search bar to the right */
+  margin-left: 20px; /* Space between buttons and search bar */
+}
+
+.search-bar {
+  padding: 8px 12px; /* Increased padding for better appearance */
+  border: 1px solid #ddd;
+  border-radius: 20px; /* Rounded corners */
+  outline: none;
+  width: 300px; /* Set a default width for larger screens */
+  transition: width 0.3s; /* Smooth transition for width */
+}
+
+/* Focus effect on search bar */
+.search-bar:focus {
+  width: 400px; /* Expand width when focused */
+  border-color: #ffae42; /* Change border color when focused */
+}
+
+/* Responsive design for tablets */
+@media (max-width: 992px) {
+  .navbar {
+      padding: 8px 15px;
+  }
+  .brand-name {
+      font-size: 32px;
+  }
+  .logo, .logo2 {
+      height: 35px;
+  }
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+
+  .navbar-left, .navbar-buttons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 5px 0;
+  }
+
+  .navbar-buttons {
+      gap: 5px; /* Reduces gap between buttons on smaller screens */
+      flex-wrap: wrap;
+  }
+
+  .search-bar {
+      width: 80%; /* Full-width search bar on smaller screens */
+  }
+
+  .brand-name {
+      font-size: 28px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+  .brand-name {
+      font-size: 24px;
+  }
+  .search-bar {
+      width: 100%; /* Full-width for smallest screens */
+  }
+  .logo, .logo2 {
+      height: 30px;
+  }
+}
+
+
+
+
+/*
+
+
+/* NAVIGATION MENU END */
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+   
+}
+
+/* Main Content */
+
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  color: #ffae42;
+  padding: 20px ;
+  background: rgba(0, 0, 0, 0.7);
+  margin-bottom: 200px;
+  border-radius: 50px;
+  margin-top: 90px;
+  width: 80%;
+  margin-left: 10%;
+  
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.quote {
+  font-size: 24px;
+  font-style: italic;
+  color: white;
+  margin-bottom: 100px;
+}
+
+/* Promotions Section */
+.promotions {
+  padding: 40px 10px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 100px;
+}
+
+.promotions h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.promo-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.promo-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 100px;
+  color: white;
+  width: 250px;
+  text-align: center;
+}
+
+.promo-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.promo-card p {
+  margin-bottom: 15px;
+}
+
+.promo-card button {
+  background-color: #f76c6c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 40px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  border-radius: 100px;
+  color: #ffae42;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 18px;
+  color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .hero h1 {
+      font-size: 40px;
+  }
+
+  .quote {
+      font-size: 22px;
+  }
+
+  .promotions h2 {
+      font-size: 28px;
+  }
+
+  .promo-cards {
+      gap: 15px;
+  }
+
+  .promo-card {
+      width: 220px; /* Adjust card width */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+      padding: 40px 10px;
+      margin-top: 60px; /* Reduce top margin */
+      margin-bottom: 80px; /* Reduce bottom margin */
+  }
+
+  .hero h1 {
+      font-size: 36px;
+  }
+
+  .quote {
+      font-size: 20px;
+  }
+
+  .promotions h2 {
+      font-size: 24px;
+  }
+
+  .promo-cards {
+      flex-direction: column;
+      align-items: center; /* Center cards */
+      gap: 15px;
+  }
+
+  .promo-card {
+      width: 90%; /* Full width on smaller screens */
+      max-width: 300px; /* Limit max width */
+  }
+
+  .testimonials {
+      padding: 30px 10px; /* Reduce padding */
+  }
+
+  .testimonials h2 {
+      font-size: 28px;
+  }
+
+  .testimonial p {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+      font-size: 28px; /* Further reduce heading size */
+  }
+
+  .quote {
+      font-size: 18px; /* Further reduce quote size */
+  }
+
+  .promotions h2 {
+      font-size: 22px; /* Further reduce promotions heading */
+  }
+
+  .promo-card button {
+      padding: 8px 16px; /* Smaller button size */
+  }
+
+  .testimonials h2 {
+      font-size: 24px; /* Further reduce testimonials heading */
+  }
+
+  .testimonial p {
+      font-size: 14px; /* Further reduce testimonial text size */
+  }
+}
+
+
+
+/* HOME PAGE ENDS */
+
+
+
+
+/* PRODUCTS PAGE STARTS */
+
+
+.productparent {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding-top: 20px;
+   
+  }
+  
+
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    justify-content: center;
+    margin: 10px 50px;
+    position: relative;
+    top: 10vh;
+    z-index: 1;
+    margin-bottom: 10vh;
+  }
+  
+  .product-card {
+    width: 220px;
+    padding: 10px;
+   background-color:  #17004b;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-top: -60px;
+    margin-bottom: 40px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover .product-image {
+    transform: scale(1.05);
+  }
+  
+  .product-info h3 {
+    font-size: 1rem;
+    color: white;
+    margin: 10px 0;
+  }
+  
+  .product-info p {
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+
+/* PRODUCTS PAGE ENDS */
+
+
+
+
+
+
+
+/* PRODUCTS DROP DOWN STARTS */
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(7, 37, 56);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 20px;
+
+}
+
+
+.dropdown-content a {
+    color: rgb(246, 246, 246);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+    
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ffae42;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+/* PRODUCTS DROP DOWN ENDS */
+
+
+
+
+
+
+
+/* contact us page starts */
+
+
+
+/* Base styling for the contact page */
+.contact-page-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    margin-top: -70px;
+    
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+  }
+  
+  .contact-page {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+   
+  }
+  
+  .contact-container {
+    background-color: #0000;
+    max-width: 600px;
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+
+    box-shadow: 0 8px 16px rgba(0.8, 0.8, 0.8, 0.4);
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 50px;
+   
+   
+  }
+  
+  .contact-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .contact-container p {
+    font-size: 1em;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  /* Form styling */
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 8px;
+    color: white;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #888888;
+    outline: none;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 20px;
+      box-shadow: none;
+    }
+  
+    .contact-container h1 {
+      font-size: 1.8em;
+    }
+  
+    .contact-container p {
+      font-size: 0.95em;
+    }
+  
+    .submit-button {
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-container h1 {
+      font-size: 1.6em;
+    }
+  
+    .contact-container p {
+      font-size: 0.9em;
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 0.9em;
+      padding: 10px;
+    }
+  
+    .submit-button {
+      padding: 10px;
+      font-size: 0.95em;
+    }
+  }
+  
+
+
+
+
+/* contact us page ends */
+
+
+
+
+
+
+
+/* About us page starts */
+
+
+/* Base styles for About Us page */
+/* Base styles for About Us page */
+.about-page-container {
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top to accommodate navigation and footer */
+    background: linear-gradient(135deg, #04619F, #0000);
+    color: #fff;
+   
+    box-sizing: border-box;
+    text-align: center;
+    min-height: calc(100vh - 120px); /* Adjust height considering navigation and footer */
+    background-color: #001137;
+    
+    
+
+
+  }
+  
+  .about-section {
+    max-width: 800px;
+    width: 100%;
+    background-color: rgba(40, 40, 40, 0.9);
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    margin-top: 140px;
+  }
+  
+  .about-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ffae42; /* Accent color */
+  }
+  
+  .about-description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  
+  .mission-statement {
+    margin: 30px 0;
+  }
+  
+  .mission-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+  }
+  
+  .mission-description {
+    font-size: 1em;
+  }
+  
+  .team-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    margin: 30px 0;
+  }
+  
+  .image-wrapper {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing between images */
+  }
+  
+  .team-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .team-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-caption {
+    margin-top: 10px;
+    color: #ddd;
+  }
+  
+  .core-values {
+    margin-top: 40px;
+  }
+  
+  .values-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color:#ffae42;
+  }
+  
+  .values-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  .values-list li {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .team-images {
+      justify-content: center; /* Center images on medium screens */
+    }
+  
+    .image-wrapper {
+      width: 45%; /* Adjust width for medium screens */
+    }
+  
+    .about-title {
+      font-size: 2.2em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .team-images {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-wrapper {
+      width: 80%; /* Full width for smaller screens */
+      margin-bottom: 20px;
+    }
+  
+    .about-title {
+      font-size: 2em;
+    }
+  
+    .about-description,
+    .mission-title,
+    .values-title {
+      font-size: 1.1em; /* Adjust font size for readability */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-title {
+      font-size: 1.8em; /* Further adjust for small screens */
+    }
+  
+    .about-description {
+      font-size: 1em;
+    }
+  }
+  
+
+/* About us page ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* About us page ends */
+
+
+
+
+/* form page starts */
+
+
+/* Body Background Styling */
+.formbody {
+  background: linear-gradient(135deg, #001f3f, #001137);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Delivery Form Wrapper */
+.delivery-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Delivery Form Container */
+.delivery-form-container {
+  background-color: #ffffff;
+  width: 70%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin-top: 1%;
+  margin-bottom: 7%;
+
+}
+
+/* Form Heading */
+.delivery-form-heading {
+  color: #001f3f;
+  font-size: 26px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Form Layout */
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Styling */
+.delivery-label {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Input and Select Styling */
+.delivery-input, 
+.delivery-select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Payment Options */
+.delivery-payment-options {
+  margin-bottom: 15px;
+}
+
+.payment-label {
+  margin-left: 5px;
+  color: #555;
+}
+
+/* Submit Button */
+.delivery-submit-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #001f3f;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delivery-submit-button:hover {
+  background-color: #002c5f;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .delivery-form-container {
+      width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .delivery-form-heading {
+      font-size: 22px;
+  }
+  .delivery-input, 
+  .delivery-select, 
+  .delivery-submit-button {
+      font-size: 14px;
+      padding: 10px;
+  }
+}
+
+
+/* form page ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General footer styling */
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+
+.footer-section h3, .footer-section h4 {
+    color: #ffae42;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    color: #ffae42;
+}
+
+/* Social Media Icon Styles */
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.social-icons img:hover {
+    filter: none;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section h3, .footer-section h4 {
+        font-size: 1em;
+    }
+
+    .footer-section p, .footer-section ul, .footer-bottom p {
+        font-size: 0.8em;
+    }
+}
+
+
+
+
+
+
+/* General footer styling ENDS */
+
+
+
+
