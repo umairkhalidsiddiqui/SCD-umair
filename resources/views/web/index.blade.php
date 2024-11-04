@@ -20,7 +20,7 @@
                     <button onclick="location.href='{{ url('/men') }}'">Shop Now</button>
                 </div>
                 <div class="promo-card">
-                    <h3>New Arrivals.</h3>
+                    <h3>New Arrivals</h3>
                     <p>Explore the latest trends and styles.</p>
                     <button onclick="location.href='{{ url('/women') }}'">Explore Collection</button>
                 </div>
