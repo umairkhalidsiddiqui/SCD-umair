@@ -28,4 +28,9 @@ class WebController extends Controller
     public function form(){
         return view('web.form');
     }
+
+    public function description(){
+        return view('web.description');
+    }
+    
 }

@@ -12,6 +12,7 @@ Route::get('/aboutus', [WebController::class, 'aboutus'])->name('aboutus');
 Route::get('/contactus', [WebController::class, 'contactus'])->name('contactus');
 Route::get('/register', [WebController::class, 'register'])->name('register');
 Route::get('/form', [WebController::class, 'form'])->name('form');
+Route::get('/description', [WebController::class, 'description'])->name('description');
     
 
 Route::get('/dashboard', function () {

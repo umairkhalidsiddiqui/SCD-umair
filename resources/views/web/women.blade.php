@@ -1,21 +1,8 @@
 <x-web-layout>
 
-
-
-
-
 <div class="productparent">
 
-
- 
-
-
-
-
 <div class="main-content">
-    
-
-
     
       <div class="product-grid">
         <!-- Repeat this product card for each item -->
@@ -34,7 +21,7 @@
                  
             </form>
             <p>Rs.4,999.00</p>
-            <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+            <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
           </div>
         </div>
@@ -54,7 +41,7 @@
                    
               </form>
               <p>Rs.6,966.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>
@@ -75,7 +62,7 @@
                    
               </form>
               <p>Rs.7,543.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>
@@ -96,7 +83,7 @@
                    
               </form>
               <p>Rs.6,999.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>
@@ -127,7 +114,7 @@
                    
               </form>
               <p>Rs.1,559.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>
@@ -150,7 +137,7 @@
                    
               </form>
               <p>Rs.8,669.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>
@@ -171,7 +158,7 @@
                    
               </form>
               <p>Rs.8,888.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>
@@ -192,7 +179,7 @@
                    
               </form>
               <p>Rs.4,657.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>
@@ -216,7 +203,7 @@
                    
               </form>
               <p>Rs.6,659.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>
@@ -237,7 +224,7 @@
                    
               </form>
               <p>Rs.8,888.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>
@@ -259,7 +246,7 @@
                    
               </form>
               <p>Rs.4,769.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>
@@ -280,7 +267,7 @@
                    
               </form>
               <p>Rs.7,777.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>
@@ -301,7 +288,7 @@
                    
               </form>
               <p>Rs.5,999.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
             </div>
           </div>

@@ -33,7 +33,7 @@
           </form>
           <p>Rs.4,999.00</p>
           
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -54,7 +54,7 @@
 
           </form>
           <p>Rs.8,000.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -77,7 +77,7 @@
 
           </form>
           <p>Rs.3,999.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -99,7 +99,7 @@
 
           </form>
           <p>Rs.1,999.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -129,7 +129,7 @@
 
           </form>
           <p>Rs.5,555.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -153,7 +153,7 @@
 
           </form>
           <p>Rs.7,699.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -175,7 +175,7 @@
 
           </form>
           <p>Rs.1,299.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -197,7 +197,7 @@
 
           </form>
           <p>Rs.10,999.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -222,7 +222,7 @@
 
           </form>
           <p>Rs.5,000.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -244,7 +244,7 @@
 
           </form>
           <p>Rs.6,666.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -267,7 +267,7 @@
 
           </form>
           <p>Rs.2,799.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -289,7 +289,7 @@
 
           </form>
           <p>Rs.5,899.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
@@ -311,7 +311,7 @@
 
           </form>
           <p>Rs.1,000.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/form') }}'">Shop Now</button>
+          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
         </div>
       </div>
