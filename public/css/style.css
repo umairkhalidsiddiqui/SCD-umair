@@ -6,14 +6,11 @@ body{
     padding-top: 70px;
     
 }
-.aboutusbody{
-  padding-top: 0;
 
-}
 .contactusbody{
   padding-top: 0;
   background: #001137;
-  width: 100vw;
+ 
 
 }
 
@@ -238,22 +235,7 @@ body{
 
 /* NAVIGATION MENU END */
 
-.main-content{
-    display: flex;
-    flex-direction: column;
-    margin-top: 70px;
 
-   
-}
-.main-contentt{
-  display: flex;
-  flex-direction: column;
-  /* padding: 70px; */
-  width: 100vw;
-  background: #000;
-  
- 
-}
 
 /* Main Content */
 
@@ -309,6 +291,7 @@ body{
     width: 100%;
     height: auto;
     transition: transform 0.3s ease;
+    padding-bottom: 10px;
   }
   
   .product-card:hover .product-image {
@@ -409,17 +392,8 @@ body{
     /* background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%); */
   }
   
-  .contact-page {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 40px;
-    box-sizing: border-box;
-    margin-bottom: 50px;
-   
-  }
+ 
+
   
   .contact-container {
     background-color: rgba(40, 40, 40, 0.9);
@@ -503,54 +477,56 @@ body{
     background-color: #218838;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .contact-container {
-      padding: 20px;
-      box-shadow: none;
+        padding: 15px;
+        max-width: 90%;
+       
+
     }
-  
+
+    .contact-page-body{
+      margin-top: 10px;
+      padding-top: 30px;
+    }
+
     .contact-container h1 {
-      font-size: 1.8em;
+        font-size: 1.8rem;
     }
-  
+
     .contact-container p {
-      font-size: 0.95em;
+        font-size: 0.95rem;
     }
-  
-    .submit-button {
-      padding: 12px;
-    }
-    .about-page-container{
-      margin-top: 50px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .contact-container h1 {
-      font-size: 1.6em;
-    }
-  
-    .contact-container p {
-      font-size: 0.9em;
-    }
-  
+
     .contact-form input,
     .contact-form textarea {
-      font-size: 0.9em;
-      padding: 10px;
+        font-size: 0.9rem;
     }
-  
+
     .submit-button {
-      padding: 10px;
-      font-size: 0.95em;
+        font-size: 0.95rem;
     }
-    .about-page-container{
-      margin-top: 50px;
-      padding-top: 100px;
+}
+
+@media (max-width: 480px) {
+    .contact-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .contact-container p {
+        font-size: 0.85rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.85rem;
+    }
+
+    .submit-button {
+        font-size: 0.9rem;
+        padding: 8px 10px;
     }
   }
-  
 
 
 
@@ -562,24 +538,28 @@ body{
 
 
 
-
 /* About us page starts */
 
 
-/* Base styles for About Us page */
-/* Base styles for About Us page */
+.aboutusbody{
+  
+  background-color: #001137;
+
+}
 .about-page-container {
-   
+  padding-top: 50px;
+  padding-bottom: 50px;
+
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Align items to the top to accommodate navigation and footer */
     color: #fff;
-    /* width: 100vw; */
-    box-sizing: border-box;
+   
+ 
     text-align: center;
     min-height: calc(100vh - 120px); /* Adjust height considering navigation and footer */
-    background-color: #001137;
-   width: 100%;
+   
+  
     
 
 
@@ -671,6 +651,12 @@ body{
   
   /* Responsive Design */
   @media (max-width: 1024px) {
+
+   .about-page-container{
+    margin-top: 200px;
+    padding-top: 50px;
+   }
+
     .team-images {
       justify-content: center; /* Center images on medium screens */
     }
@@ -685,6 +671,12 @@ body{
   }
   
   @media (max-width: 768px) {
+
+    .about-page-container{
+      margin-top: 200px;
+      padding-top: 50px;
+     }
+
     .team-images {
       flex-direction: column;
       align-items: center;
@@ -707,6 +699,12 @@ body{
   }
   
   @media (max-width: 480px) {
+
+    .about-page-container{
+      margin-top: 200px;
+      padding-top: 50px;
+     }
+
     .about-title {
       font-size: 1.8em; /* Further adjust for small screens */
     }
@@ -1301,7 +1299,7 @@ body{
 /* Title styles */
 .title {
   margin-left: 32%;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 /* Responsive Styles */

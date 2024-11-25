@@ -38,7 +38,10 @@
 
                 <button onclick="location.href='{{ url('/aboutus') }}'">About Us</button>
                 <button onclick="location.href='{{ url('/contactus') }}'">Contact Us</button>
+                <button onclick="location.href='{{ url('/admin') }}'">ADMIN</button>
+
                 <button style="margin-right: 35px;" onclick="location.href='{{ url('/register') }}'">Log-in / Sign-up</button>
+
             </div>
         </nav>
     </header>

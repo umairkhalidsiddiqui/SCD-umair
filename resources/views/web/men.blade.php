@@ -1,17 +1,13 @@
 <x-web-layout>
 
-
 <div class="productparent">
-
- 
 
   <div class="main-content">
 
-    
-
+ 
 
     <div class="product-grid">
-      <!-- Repeat this product card for each item -->
+      
       <div class="product-card">
         <img src="https://outfitters.com.pk/cdn/shop/files/F1075106801_1.jpg?v=1728449359" alt="Product 1"
           class="product-image">

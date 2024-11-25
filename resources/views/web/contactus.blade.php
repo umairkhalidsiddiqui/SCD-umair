@@ -3,11 +3,11 @@
 
 <div class="contactusbody">
 
-      <div class="main-content">
+      
         
 
         <div class="contact-page-body">
-            <div class="contact-page">
+            
               <div class="contact-container">
                 <h1>Contact Us</h1>
                 <p>We’d love to hear from you! Please fill out the form below, and we'll get back to you as soon as possible.</p>
@@ -36,13 +36,13 @@
                   <button type="submit" class="submit-button">Send Message</button>
                 </form>
               </div>
-            </div>
+            
 
             
         </div>
           
         
-      </div>
+      
 
     
 </div>
