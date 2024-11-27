@@ -21,6 +21,7 @@
                         <span class="text-danger">{{ $errors->first('description') }}</span>
                         @endif
                     </div>
+<<<<<<< HEAD
 
                        <div class="form-group mb-3">
                        <label for="price">Price</label>
@@ -30,6 +31,8 @@
                        @endif
                     </div>
 
+=======
+>>>>>>> 0baa56f057b120e03fe8a2cc6a701f39bc94c54e
                     <div class="form-group mb-4">
                         <label for="image">Image</label>
                         <input type="file" id="image" name="image" class="form-control" />

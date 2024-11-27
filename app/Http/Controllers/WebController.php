@@ -35,12 +35,15 @@ class WebController extends Controller
     }
 
 
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+>>>>>>> 0baa56f057b120e03fe8a2cc6a701f39bc94c54e
      
     public function admin(){
         
@@ -56,7 +59,10 @@ class WebController extends Controller
     $request->validate([
     'name' => 'required',
     'description'=> 'required',
+<<<<<<< HEAD
     'price'=> 'required',
+=======
+>>>>>>> 0baa56f057b120e03fe8a2cc6a701f39bc94c54e
     'image' => 'required|mimes:jpeg,jpg,png,gif|max:10000'
     ]);
 
@@ -70,9 +76,12 @@ class WebController extends Controller
      $product->image = $imageName;
      $product->name = $request->name;
      $product->description = $request->description;
+<<<<<<< HEAD
 
      $product->price = $request->price;
 
+=======
+>>>>>>> 0baa56f057b120e03fe8a2cc6a701f39bc94c54e
      $product->save();
      return back()->withSuccess('Product Created !!!!!');
     }
@@ -101,9 +110,12 @@ class WebController extends Controller
     $request->validate([
     'name' => 'required',
     'description'=> 'required',
+<<<<<<< HEAD
 
     'price'=> 'required',
 
+=======
+>>>>>>> 0baa56f057b120e03fe8a2cc6a701f39bc94c54e
     'image' => 'nullable|mimes:jpeg,jpg,png,gif|max:10000'
     ]);
     $product = Product::where('id', $id)->first();
@@ -117,9 +129,12 @@ class WebController extends Controller
 
      $product->name = $request->name;
      $product->description = $request->description;
+<<<<<<< HEAD
 
      $product->price = $request->price;
 
+=======
+>>>>>>> 0baa56f057b120e03fe8a2cc6a701f39bc94c54e
      $product->save();
      return back()->withSuccess('Product updated !!!!!');
 

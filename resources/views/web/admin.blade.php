@@ -10,8 +10,11 @@
                     <th>Sno.</th>
                     <th>Name</th>
                     <th>Image</th>
+<<<<<<< HEAD
                     <th>price</th>
 
+=======
+>>>>>>> 0baa56f057b120e03fe8a2cc6a701f39bc94c54e
                     <th>Action</th>
                 </tr>
             </thead>
@@ -28,11 +31,14 @@
                         <img src="products/{{ $product->image }}" class="rounded-circle" width="50" height="50" />
                     </td>
                     <td>
+<<<<<<< HEAD
                         <a href="products/{{ $product->id }}/show" class="text-dark" style="text-decoration: none;">
                             {{ $product->price }}
                         </a>
                     </td>
                     <td>
+=======
+>>>>>>> 0baa56f057b120e03fe8a2cc6a701f39bc94c54e
                         <a href="products/{{ $product->id }}/edit" class="btn btn-dark btn-sm">Edit</a>
 
                         <form method="POST" class="d-inline" action="products/{{ $product->id }}/delete">
