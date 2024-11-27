@@ -13,6 +13,7 @@
 
         <header class="site-header">
             <h1 class="header-title">WELCOME TO KHAREDAAR</h1>
+            
             <p class="header-subtitle">Quality Fashion for Every Occasion</p>
         </header>
 
@@ -29,98 +30,25 @@
 
 
         <div class="product-grid">
-      <!-- Repeat this product card for each item -->
-      <div class="product-card">
-        <img src="https://outfitters.com.pk/cdn/shop/files/F1075106801_1.jpg?v=1728449359" alt="Product 1"
-          class="product-image">
+       @foreach($products as $product)
+       <div class="product-card">
+        <img src="products/{{ $product->image }}" alt="{{ $product->name }}" class="product-image">
         <div class="product-info">
+            <h2 style="font-size: smaller; color: rgb(255, 255, 255);">{{ $product->name }}</h2>
+            <h2 style="font-size: smaller; color: rgb(255, 255, 255);">Rs.{{ $product->price }}</h2>
 
-          <h2 id="quotedesign" style="font-size: smaller; color: rgb(255, 255, 255);">Not A Bad Life Raglan</h2>
-          
-          <h3>Crew Neck Basic T-shirt</h3>
+            <button class="order-button" onclick="location.href='products/{{ $product->id }}/show'">Shop Now</button>
 
-          <form style="color: white;">
-            <label>L</label>
-            <input type="radio" id="small" name="size" value="Small">
-            <label>M</label>
-            <input type="radio"id="medium" name="size" value="medium">
-            <label>S</label>
-            <input type="radio"id="large" name="size" value="large"><br>
-          
+            <div style="margin-top: 10px;">
 
-          </form>
-          <p>Rs.4,999.00</p>
-          
-          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
-
-        </div>
-      </div>
-
-      <div class="product-card">
-        <img src="https://outfitters.com.pk/cdn/shop/files/F1067106814.jpg?v=1730289373" alt="Product 1"
-          class="product-image">
-        <div class="product-info">
-          <h2 id="quotedesign"style="font-size: smaller;  color: rgb(255, 255, 255);">Visionary</h2>
-          <h3>Crew Neck Basic T-shirt</h3>
-          <form style="color: white;">
-            <label>L</label>
-            <input type="radio">
-            <label>M</label>
-            <input type="radio">
-            <label>S</label>
-            <input type="radio">
-
-          </form>
-          <p>Rs.8,000.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
-
-        </div>
-      </div>
-
-
-      <div class="product-card">
-        <img
-          src="https://outfitters.com.pk/cdn/shop/files/F1075106901_2_e7987c46-fbf5-4add-918a-764f15de60d0.jpg?v=1728449359"
-          alt="Product 1" class="product-image">
-        <div class="product-info">
-          <h2 id="quotedesign" style="font-size: smaller; color: white;">Create Your Legacy</h2>
-          <h3>Crew Neck Basic T-shirt</h3>
-          <form style="color: white;">
-            <label>L</label>
-            <input type="radio">
-            <label>M</label>
-            <input type="radio">
-            <label>S</label>
-            <input type="radio">
-
-          </form>
-          <p>Rs.3,999.00</p>
-          <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
-
-        </div>
-      </div>
-      
-        
-          
-          <div class="product-card">
-            <img src="https://outfitters.com.pk/cdn/shop/files/F0090204901_2.jpg?v=1730461384&width=360" alt="Product 1" class="product-image">
-            <div class="product-info">
-              <h2 style="font-size: smaller;color: white">Built for Greatness</h2>
-              <h3>Rib Knit High Collar Dress</h3>
-              <form style="color: white;">
-                <label>L</label>
-                <input type="radio">
-                <label>M</label>
-                  <input type="radio">
-                  <label>S</label>
-                    <input type="radio">
-                   
-              </form>
-              <p>Rs.6,999.00</p>
-              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
-
+               
             </div>
-          </div>
+        </div>
+    </div>
+    @endforeach
+</div>
+
+
           
 
 
@@ -191,5 +119,8 @@
      
 
     </div>
+
+    </div>
+    
 
 </x-web-layout>

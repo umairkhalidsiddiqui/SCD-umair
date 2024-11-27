@@ -5,7 +5,7 @@
 <div class="main-content">
     
       <div class="product-grid">
-        <!-- Repeat this product card for each item -->
+     
         <div class="product-card">
           <img src="https://outfitters.com.pk/cdn/shop/files/F0085204302_2.jpg?v=1730462157&width=720" alt="Product 1" class="product-image">
           <div class="product-info">

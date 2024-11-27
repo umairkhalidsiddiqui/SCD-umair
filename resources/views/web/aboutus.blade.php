@@ -3,12 +3,8 @@
 <div class="aboutusbody">
    
 
-
-<div class="main-contentt">
-
-
-
     <div  class="about-page-container">
+
         <div class="about-section">
           <h1 class="about-title">About Us</h1>
           <p class="about-description">At our core, we value quality, innovation, and dedication. Discover our story, our values, and our vision for the future.</p>
@@ -42,8 +38,13 @@
               <li>Innovation and Creativity</li>
             </ul>
           </div>
+        
+        
+        
+        
+        
         </div>
-      </div>
+      
       
     
       
@@ -59,7 +60,5 @@
 </div>
     
     
-</div>
-
 
 </x-web-layout>
