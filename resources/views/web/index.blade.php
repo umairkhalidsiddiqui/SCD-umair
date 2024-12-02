@@ -30,24 +30,89 @@
 
 
         <div class="product-grid">
-       @foreach($products as $product)
-       <div class="product-card">
-        <img src="products/{{ $product->image }}" alt="{{ $product->name }}" class="product-image">
-        <div class="product-info">
-            <h2 style="font-size: smaller; color: rgb(255, 255, 255);">{{ $product->name }}</h2>
-            <h2 style="font-size: smaller; color: rgb(255, 255, 255);">Rs.{{ $product->price }}</h2>
+     
+        <div class="product-card">
+          <img src="https://outfitters.com.pk/cdn/shop/files/F0085204302_2.jpg?v=1730462157&width=720" alt="Product 1" class="product-image">
+          <div class="product-info">
+            <h2 style="font-size: smaller; color: white">Fearless and Focused</h2>
+            <h3>Striped Knit Dress</h3>
+            <form style="color: white;">
+              <label>L</label>
+              <input type="radio">
+              <label>M</label>
+                <input type="radio">
+                <label>S</label>
+                  <input type="radio">
+                 
+            </form>
+            <p>Rs.4,999.00</p>
+            <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
-            <button class="order-button" onclick="location.href='products/{{ $product->id }}/show'">Shop Now</button>
-
-            <div style="margin-top: 10px;">
-
-               
-            </div>
+          </div>
         </div>
-    </div>
-    @endforeach
-</div>
+        
+        <div class="product-card">
+            <img src="https://outfitters.com.pk/cdn/shop/files/F0085204901_2.jpg?v=1730462156&width=360" alt="Product 1" class="product-image">
+            <div class="product-info">
+              <h2 style="font-size: smaller; color: white">Chase the Vibes</h2>
+              <h3>Striped Knit Dress</h3>
+              <form style="color: white;">
+                <label>L</label>
+                <input type="radio">
+                <label>M</label>
+                  <input type="radio">
+                  <label>S</label>
+                    <input type="radio">
+                   
+              </form>
+              <p>Rs.6,966.00</p>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
 
+            </div>
+          </div>
+        
+          
+          <div class="product-card">
+            <img src="https://outfitters.com.pk/cdn/shop/files/F0090204806_2.jpg?v=1730461384&width=360" alt="Product 1" class="product-image">
+            <div class="product-info">
+              <h2 style="font-size: smaller; color: white">Beyond the Ordinary</h2>
+              <h3>Rib Knit High Collar Dress</h3>
+              <form style="color: white;">
+                <label>L</label>
+                <input type="radio">
+                <label>M</label>
+                  <input type="radio">
+                  <label>S</label>
+                    <input type="radio">
+                   
+              </form>
+              <p>Rs.7,543.00</p>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
+
+            </div>
+          </div>
+        
+          
+          <div class="product-card">
+            <img src="https://outfitters.com.pk/cdn/shop/files/F0090204901_2.jpg?v=1730461384&width=360" alt="Product 1" class="product-image">
+            <div class="product-info">
+              <h2 style="font-size: smaller;color: white">Built for Greatness</h2>
+              <h3>Rib Knit High Collar Dress</h3>
+              <form style="color: white;">
+                <label>L</label>
+                <input type="radio">
+                <label>M</label>
+                  <input type="radio">
+                  <label>S</label>
+                    <input type="radio">
+                   
+              </form>
+              <p>Rs.6,999.00</p>
+              <button class="order-button" onclick="location.href='{{ url('/description') }}'">Shop Now</button>
+
+            </div>
+          </div>
+          
 
           
 

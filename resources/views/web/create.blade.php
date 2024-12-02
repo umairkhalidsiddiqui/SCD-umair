@@ -21,7 +21,6 @@
                         <span class="text-danger">{{ $errors->first('description') }}</span>
                         @endif
                     </div>
-<<<<<<< HEAD
 
                        <div class="form-group mb-3">
                        <label for="price">Price</label>
@@ -31,8 +30,6 @@
                        @endif
                     </div>
 
-=======
->>>>>>> 0baa56f057b120e03fe8a2cc6a701f39bc94c54e
                     <div class="form-group mb-4">
                         <label for="image">Image</label>
                         <input type="file" id="image" name="image" class="form-control" />
@@ -40,6 +37,19 @@
                         <span class="text-danger">{{ $errors->first('image') }}</span>
                         @endif
                     </div>
+
+                    <div class="form-group mb-4">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category" required>
+                    <option value="men">Men</option>
+                    <option value="women">Women</option>
+                    </select>
+                    @if($errors->has('image'))
+                            <span class="text-danger">{{ $errors->first('image') }}</span>
+                        @endif
+                    </div>
+
+
                     <div class="text-center mb-3">
                         <button type="submit" class="btn btn-dark btn-lg">SUBMIT</button>
                     </div>
