@@ -18,7 +18,19 @@ return new class extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('image');
+            $table->decimal('price', 8, 2); // Adding the price column (e.g., with two decimal places)
+            $table->enum('category', ['men', 'women']); // Adding category column with predefined values
             $table->timestamps();
         });
+    }
+    
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('products');
     }
 };
