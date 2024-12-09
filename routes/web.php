@@ -5,6 +5,8 @@ use App\Http\Controllers\WebController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\SearchController;
+
 
 
 
@@ -33,6 +35,7 @@ Route::post('/reviews', [ReviewController::class, 'store'])->middleware('auth')-
 Route::get('/products/{product}/reviews', [ReviewController::class, 'index'])->name('reviews.index');
 Route::delete('/reviews/{id}', [ReviewController::class, 'destroy'])->name('reviews.destroy');
 
+Route::get('/search', [SearchController::class, 'filter'])->name('search.filter');
 
 
 

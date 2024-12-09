@@ -301,7 +301,6 @@ body{
 /* NAVIGATION MENU START */
 
 /* General styling for the navbar */
-/* Navbar styling */
 .navbar {
   display: flex;
   align-items: center;
@@ -336,15 +335,13 @@ body{
   margin-top: 5px;
 }
 
-/* Ensure equal margins between logos and brand name */
 .logo {
-  margin-right: 10px; /* Adjust margin for the first logo */
+  margin-right: 10px; /* Space between first logo and brand name */
 }
 
 .logo2 {
-  margin-left: 35px; /* Adjust margin for the second logo */
+  margin-left: 35px;
   margin-bottom: 14px;
-
 }
 
 /* Brand name styling */
@@ -352,7 +349,7 @@ body{
   font-size: 40px;
   color: white;
   font-weight: 700;
-  margin-left: 10px; /* Space to the left of the brand name */
+  margin-left: 10px; /* Space between logo and brand name */
 }
 
 /* Button styling */
@@ -360,6 +357,7 @@ body{
   display: flex;
   gap: 10px; /* Adjust gap between buttons */
   margin-left: 20px; /* Space between buttons and search bar */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 .navbar-buttons button {
@@ -382,6 +380,8 @@ body{
   background-color: #555;
   min-width: 160px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 10;
 }
 
 .navbar-buttons .dropdown:hover .dropdown-content {
@@ -395,90 +395,178 @@ body{
   text-decoration: none;
 }
 
+.navbar-buttons .dropdown-content a:hover {
+  background-color: #444;
+}
+
 /* Search bar styling */
 .navbar-search {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  justify-content: flex-end; /* Align search bar to the right */
-  margin-left: 20px; /* Space between buttons and search bar */
+  justify-content: flex-end;
+  margin-left: 20px;
+  position: relative; /* For positioning the search icon and dropdown */
 }
 
+/* Search input field */
 .search-bar {
-  padding: 8px 12px; /* Increased padding for better appearance */
-  border: 1px solid #ddd;
-  border-radius: 20px; /* Rounded corners */
+  padding: 12px 40px 12px 15px; /* More padding for a spacious input */
+  border: 2px solid #444;
+  border-radius: 50px; /* Round edges for a modern look */
   outline: none;
-  width: 275px; /* Set a default width for larger screens */
-  transition: width 0.3s; /* Smooth transition for width */
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Focus effect on search bar */
-.search-bar:focus {
-  width: 315px; /* Expand width when focused */
-  border-color: #ffae42; /* Change border color when focused */
+.search-bar::placeholder {
+  color: #bbb;
+  opacity: 0.8;
 }
+
+/* Focus state for the search input */
+.search-bar:focus {
+  width: 340px; /* Expands when focused */
+  border-color: #ffae42;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 10px rgba(255, 174, 66, 0.3);
+}
+
+/* Search icon */
+.navbar-search::after {
+  content: '🔍';
+  position: absolute;
+  right: 15px; /* Adjusted to better fit */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 0.7;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Search results dropdown */
+#search-results {
+  position: absolute;
+  top: calc(100% + 8px); /* Space between input field and dropdown */
+  left: 0;
+  width: 100%; /* Ensures the dropdown width matches the search bar */
+  background: #000; /* Black background */
+  border: 1px solid #444; /* Dark border */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+  border-radius: 15px; /* Rounded corners for the dropdown */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 300px; /* Limiting the dropdown height */
+  overflow-y: auto; /* Scroll if there are too many items */
+}
+
+/* Individual list item styling */
+#search-results li {
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ffae42; /* Yellow text */
+  transition: background-color 0.3s ease;
+}
+
+#search-results li:hover {
+  background: #444; /* Darker background when hovered */
+}
+
+/* Hidden class for the dropdown */
+.hidden {
+  display: none;
+}
+
+/* Smooth transition for dropdown appearance */
+#search-results {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#search-results.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#search-results.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 80%; /* Adjusted for smaller screens */
+  }
+}
+
 
 /* Responsive design for tablets */
 @media (max-width: 992px) {
   .navbar {
-      padding: 8px 15px;
+    padding: 8px 15px;
   }
+
   .brand-name {
-      font-size: 32px;
+    font-size: 32px;
   }
+
   .logo, .logo2 {
-      height: 35px;
+    height: 35px;
   }
 }
 
 /* Responsive design for mobile screens */
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
   }
 
   .navbar-left, .navbar-buttons {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin: 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
   }
 
   .navbar-buttons {
-      gap: 5px; /* Reduces gap between buttons on smaller screens */
-      flex-wrap: wrap;
+    gap: 5px; /* Reduce gap between buttons */
+    flex-wrap: wrap;
   }
 
   .search-bar {
-      width: 80%; /* Full-width search bar on smaller screens */
+    width: 80%; /* Full-width search bar */
   }
 
   .brand-name {
-      font-size: 28px;
+    font-size: 28px;
   }
 }
 
 /* Extra small screens */
 @media (max-width: 576px) {
   .brand-name {
-      font-size: 24px;
+    font-size: 24px;
   }
+
   .search-bar {
-      width: 100%; /* Full-width for smallest screens */
+    width: 100%; /* Full-width for the smallest screens */
   }
+
   .logo, .logo2 {
-      height: 30px;
+    height: 30px;
   }
 }
-
-
-
-
-/*
-
 
 /* NAVIGATION MENU END */
 
@@ -495,7 +583,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #d5d5d5;
+    
     padding-top: 20px;
    
   }
@@ -505,7 +593,7 @@ body{
   .product-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 40px;
     padding: 20px;
     justify-content: center;
     margin: 10px 30px;
@@ -1211,19 +1299,39 @@ body{
 /* General footer styling */
 
 
+/* Make sure the body and html take up full height */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Ensure the page wrapper takes the full height */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This ensures that the footer is pushed to the bottom */
+}
+
+/* Content section should take all available space */
+main {
+    flex: 1;
+}
+
+/* Footer styling */
 .footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     font-family: Arial, sans-serif;
     text-align: center;
+    width: 100%;
+    position: relative;
 }
 
 .footer-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 10px;
     gap: 20px;
 }
 
@@ -1288,7 +1396,7 @@ body{
         flex-direction: column;
         text-align: center;
     }
-    
+
     .footer-section {
         margin-bottom: 15px;
     }
@@ -1304,12 +1412,6 @@ body{
     }
 }
 
-
-
-
-
-
-/* General footer styling ENDS */
 
 
 
