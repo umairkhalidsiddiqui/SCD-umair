@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\ContactController;
 
 
 
@@ -36,6 +37,7 @@ Route::get('/products/{product}/reviews', [ReviewController::class, 'index'])->n
 Route::delete('/reviews/{id}', [ReviewController::class, 'destroy'])->name('reviews.destroy');
 
 Route::get('/search', [SearchController::class, 'filter'])->name('search.filter');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 
 

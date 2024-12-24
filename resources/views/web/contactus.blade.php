@@ -1,8 +1,6 @@
-.contactusbody
 <x-web-layout>
 
 <div class="contactusbody">
-
 
         <div class="contact-page-body">
             
@@ -10,7 +8,25 @@
                 <h1>Contact Us</h1>
                 <p>We’d love to hear from you! Please fill out the form below, and we'll get back to you as soon as possible.</p>
           
-                <form class="contact-form">
+                <!-- Display success or error messages -->
+                @if(session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
+
+                @if($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+          
+                <form class="contact-form" action="{{ route('contact.store') }}" method="POST">
+                  @csrf
                   <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -40,7 +56,12 @@
         </div>
 
           
-        
+        @if(session('success'))
+    <div>
+        {{ session('success') }}
+    </div>
+@endif
+
       
 
     

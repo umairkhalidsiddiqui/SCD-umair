@@ -20,39 +20,45 @@
                 </div>
 
                 <div class="navbar-search">
-                    <input type="text" placeholder="Search..." class="search-bar" id="search-bar">
-                    <ul id="search-results" class="dropdown hidden"></ul>
-                </div>
+    <input type="text" placeholder="Search..." class="search-bar" id="search-bar">
+    <ul id="search-results" class="dropdown hidden"></ul>
+</div>
 
-                <script>
-                    document.querySelector('.search-bar').addEventListener('keyup', function () {
-                        const query = this.value.trim();  // Get the input value
+<script>
+    document.querySelector('.search-bar').addEventListener('keyup', function () {
+        const query = this.value.trim(); // Get the input value
 
-                        if (query.length > 0) {
-                            // Make an AJAX request to the server
-                            fetch(`/search?query=${query}`)
-                                .then(response => response.json())
-                                .then(data => {
-                                    const resultsContainer = document.getElementById('search-results');
-                                    resultsContainer.innerHTML = ''; // Clear previous results
+        if (query.length > 0) {
+            // Make an AJAX request to the server
+            fetch(`/search?query=${query}`)
+                .then(response => response.json())
+                .then(data => {
+                    const resultsContainer = document.getElementById('search-results');
+                    resultsContainer.innerHTML = ''; // Clear previous results
 
-                                    if (data.length > 0) {
-                                        data.forEach(item => {
-                                            const li = document.createElement('li');
-                                            li.textContent = `${item.name} (${item.category})`;  // Show name and category
-                                            resultsContainer.appendChild(li);
-                                        });
-                                        resultsContainer.classList.remove('hidden');  // Show results
-                                    } else {
-                                        resultsContainer.classList.add('hidden');  // Hide if no results
-                                    }
-                                });
-                        } else {
-                            // Hide results if search bar is empty
-                            document.getElementById('search-results').classList.add('hidden');
-                        }
-                    });
-                </script>
+                    if (data.length > 0) {
+                        data.forEach(item => {
+                            const li = document.createElement('li');
+                            const link = document.createElement('a');
+                            link.textContent = `${item.name} (${item.category})`; // Show name and category
+                            link.href = `/products/${item.id}/show`; // Link to the product show page
+                            link.style.textDecoration = 'none'; // Optional: Remove underline
+                            link.style.color = 'inherit'; // Optional: Keep default color
+                            li.appendChild(link);
+                            resultsContainer.appendChild(li);
+                        });
+                        resultsContainer.classList.remove('hidden'); // Show results
+                    } else {
+                        resultsContainer.classList.add('hidden'); // Hide if no results
+                    }
+                });
+        } else {
+            // Hide results if search bar is empty
+            document.getElementById('search-results').classList.add('hidden');
+        }
+    });
+</script>
+
 
                 <div class="navbar-buttons">
                     <button onclick="location.href='{{ url('/') }}'">Home</button>

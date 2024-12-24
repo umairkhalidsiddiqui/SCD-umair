@@ -49,13 +49,10 @@ class ProductController extends Controller
 
 
 
-
-
     public function edit($id){
         $product = Product::where('id', $id)->first();
         return view('web.edit', ['product' => $product]);
     }
-
 
 
     public function update(Request $request, $id){
